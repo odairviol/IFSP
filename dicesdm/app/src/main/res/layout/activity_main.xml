@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/label_nro_dados"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/nro_dados" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/label_inicial"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/jogarDadoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="jogarDado"
+        android:text="@string/label_jogar" />
+
+    <TextView
+        android:id="@+id/resultadoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+
+    <ImageView
+        android:id="@+id/resultadoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:contentDescription="Imagem Resultado"
+        app:srcCompat="@android:color/transparent" />
+
+    <ImageView
+        android:id="@+id/resultado2ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        app:srcCompat="@android:color/transparent" />
+
+</LinearLayout>
